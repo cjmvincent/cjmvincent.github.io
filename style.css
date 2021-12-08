@@ -12,7 +12,15 @@ body
   min-height: 100vh;
   background: #000;
 }
-.loader
+.container
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .ring
 {
   position: relative;
   width: 150px;
@@ -35,7 +43,7 @@ body
     filter: hue-rotate(360deg);
   }
 }
-.loader:before
+.ring:before
 {
   content: '';
   position: absolute;
@@ -47,7 +55,7 @@ body
   border-radius: 50%;
   z-index: 1000;
 }
-.loader:after
+.ring:after
 {
   content: '';
   position: absolute;
@@ -61,4 +69,13 @@ body
   z-index: 1000;
   z-index: 1;
   filter: blur(30px);
+}
+.container p
+{
+  position: absolute;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: consolas;
+  bottom: -80px;
+  letter-spacing: 0.15em;
 }
