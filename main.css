@@ -66,7 +66,6 @@ body {
   margin: 25px auto;
   height: 100%;
   order: 1;
-  border: 1px solid red;
 }
 
 .container .container-left .headshot img {
@@ -81,7 +80,6 @@ body {
 .container .container-left .name {
   margin: 25px auto;
   order: 2;
-  border: 1px solid red;
 }
 
 .container .container-left .social-links {
@@ -89,7 +87,6 @@ body {
   width: auto;
   margin: 25px auto;
   order: 3;
-  border: 1px solid red;
 }
 
 .container .container-left .social-links a {
