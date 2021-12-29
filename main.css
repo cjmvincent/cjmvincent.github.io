@@ -27,8 +27,7 @@ body {
 
 .container {
   position: relative;
-  top: 10vh;
-  margin: auto;
+  margin: 10vh auto;
   width: 80%;
   height: 80vh;
   display: flex;
@@ -59,7 +58,7 @@ body {
   width: 50%;
   max-width: 350px;
   height: auto;
-  margin: 25px auto;
+  margin: 5px auto;
   background-color: #fff;
   border: 3px solid #fff;
   border-radius: 50%;
@@ -68,7 +67,7 @@ body {
 
 .container .left .name {
   position: relative;
-  margin: 25px auto;
+  margin: 10px auto;
   padding-top: 5px;
   grid-area: name;
 }
@@ -82,7 +81,7 @@ body {
 
 .container .left .social-links a {
   display: inline-block;
-  font-size: 45px;
+  font-size: 35px;
   color: #ffffff;
   margin: 0 10px;
 }
@@ -103,6 +102,7 @@ body {
 .container .right #Hello {
   text-align: left;
   height: auto;
+  overflow: visible;
 }
 
 .container .right p {
@@ -122,9 +122,21 @@ body {
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media screen and (max-width: 800px) {
+
+  .container {
+    margin: 5vh auto;
+    width: 90%;
+    height: 90%;
+  }
+
   .container .left {
     flex: 100%;
     height: 40%;
+  }
+
+  .container .left .headshot {
+    width: auto;
+    height: 100%;
   }
 
   .container .right {
