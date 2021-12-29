@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html {
+
+}
+
+body {
+  background-color: #09aeea;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e54c8), to(#8f94fb));
+  background: linear-gradient(#4e54c8, #8f94fb);
+  width: 100%;
+  height: 100vh;
+  font-size: 15px;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  line-height: 1.65em;
+  color: #d5d5d5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  top: 10vh;
+  margin: auto;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1D2228;
+  border-radius: 32px;
+  -webkit-box-shadow: 0 0 50px -5px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 0 50px -5px rgba(0,0,0,.25);
+  box-shadow: 0 0 50px -5px rgba(0,0,0,.25);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.container .left {
+  flex: 40%;
+  padding: 25px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "headshot . ."
+    "name . ."
+    "social-links . .";
+}
+
+.container .left .headshot {
+  position: relative;
+  width: 50%;
+  max-width: 350px;
+  height: auto;
+  margin: 25px auto;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  grid-area: headshot;
+}
+
+.container .left .name {
+  position: relative;
+  margin: 25px auto;
+  padding-top: 5px;
+  grid-area: name;
+}
+
+.container .left .social-links {
+  position: relative;
+  margin: 25px auto;
+  padding-top: 5px;
+  grid-area: social-links;
+}
+
+.container .left .social-links a {
+  display: inline-block;
+  font-size: 45px;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+.container .left .social-links a:hover {
+  opacity:0.5;
+}
+
+.container .right {
+  flex: 60%;
+  height: 100%;
+  background-color: #272e36;
+  border-radius: 32px;
+  padding: 25px;
+  overflow: scroll;
+}
+
+.container .right #Hello {
+  text-align: left;
+  height: auto;
+}
+
+.container .right p {
+  font-style: italic;
+  text-align: left;
+}
+
+.container .right #Goodbye {
+  text-align: right;
+  height: auto;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (max-width: 800px) {
+  .container .left {
+    flex: 100%;
+    height: 40%;
+  }
+
+  .container .right {
+    flex: 100%;
+    height: 60%;
+  }
+}
