@@ -98,7 +98,13 @@ body {
   background-color: #272e36;
   border-radius: 32px;
   padding: 25px;
-  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+.container .right::-webkit-scrollbar {
+  display: none;
 }
 
 .container .right #Hello {
